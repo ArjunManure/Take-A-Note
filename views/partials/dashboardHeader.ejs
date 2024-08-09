@@ -1,0 +1,17 @@
+<header class="p-3 bg-dark text-white">
+  <div class="container-fluid">
+    <div class="d-flex flex-wrap align-items-center justify-content-between">
+      <a href="/dashboard" class="d-flex align-items-center mb-2 mb-lg-0 text-primary text-decoration-none fw-bold fs-2">
+        Take A Note
+      </a>
+
+      <form class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0" role="search" method="POST" action="/dashboard/search">
+        <input type="search" name="searchTerm" class="form-control border-primary" placeholder="Search Here..." aria-label="Search">
+      </form>
+
+      <div class="text-end">
+        <a href="/logout" type="button" class="btn btn-outline-primary">Logout</a>
+      </div>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,38 @@
+<div class="container pb-5 mb-5">
+    <div class="row mb-4">
+        <div class="col" style="margin-top: 20px;">
+            <h1>Hey, <%= userName %></h1>
+        </div>
+        <div class="col text-end" style="margin-top: 20px;">
+            <a href="/dashboard/add" class="btn btn-primary">+ Notes</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <% if (notes.length > 0) { %>
+            <% for (var i = 0; i < notes.length; i++) { %>
+                <div class="col-sm-3 mb-4">
+                    <div class="card border-primary" style="min-height: 210px">
+                        <a href="/dashboard/item/<%= notes[i]._id %>" class="card-body text-decoration-none">
+                            <h5 class="card-title"><%= notes[i].title %></h5>
+                            <p class="card-text"><%= notes[i].body %></p>
+                        </a>
+                    </div>
+                </div>
+            <% } %>
+        <% } else { %>
+            <div class="row" >
+                <div class="col-3">
+                    <img src="/img/human-3.svg" alt="Human pointing toward create button" style="width: 270px;">
+                </div>
+                <div class="col mt-4" >
+                    <h2>Nothing Yet...</h2>
+                    <h4>Let's create your first note</h4>
+                    <br>
+                    
+                    <h5><a href="/dashboard/add" >Create Notes...</a></h5>
+                </div>
+            </div>
+        <% } %>
+    </div>
+</div>
