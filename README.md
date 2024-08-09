@@ -1,7 +1,7 @@
 # Take-A-Note
 
 Notes Management Web Application
-Technologies: Node.js, Express, MongoDB, EJS
+Technologies: Node.js, Express, MongoDB, EJS ,Passport
 
 Developed a robust web application for personal note management with the following features:
 
